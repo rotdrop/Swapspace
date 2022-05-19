@@ -110,7 +110,7 @@ void handle_requirements(void)
   const memsize_t reqbytes = memory_target();
 #ifndef NO_CONFIG
   if (verbose && reqbytes != oldreqbytes)
-	  logm(LOG_DEBUG,"Required Bytes: %d", reqbytes);
+	  logm(LOG_DEBUG,"Required Bytes: %lld", reqbytes);
 #endif
   timer_tick();
 
